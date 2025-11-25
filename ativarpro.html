@@ -1,0 +1,5 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Ativar PRO</title><link rel='stylesheet' href='style.css'></head><body><div class='container'><h2>Ativando PRO...</h2><p>Aguarde...</p></div><script>
+let u=JSON.parse(localStorage.getItem('user'));
+if(u){u.pro=true;u.uso=0;localStorage.setItem('user',JSON.stringify(u));}
+setTimeout(()=>{location='app.html';},1500);
+</script></body></html>
